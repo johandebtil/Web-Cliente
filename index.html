@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="about">SOBRE</h1><br>
+        <div class="about-content">
+            <img id="image" src="https://gartic.com.br/imgs/mural/ni/nirvaninha/avatar.png" alt="Johan Fillipe Costa Debtil">
+            <p id="about-text">
+                Johan Fillipe Costa Debtil cursa atualmente Análise e Desenvolvimento de Sistemas na Universidade Tecnológica do Paraná. Encontra-se no terceiro período, o primeiro contato com computação foi no ano de 2011 quando iniciou o curso de Engenharia de Computação na UEPG. Trabalhou no Hospital de Base de Brasília como Técnico de Informática.
+            </p>
+        </div>
+        <div class="link-container">
+            <a id="link" href="https://gartic.com.br/nirvaninha">Gartic</a>
+        </div>
+        
+        <div id="contato-section">
+            <br><br><h2>Contato</h2><br>
+            <form action="http://dainf.pg.utfpr.edu.br/professores/luizr/send_mail.php" method="POST">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="assunto">Assunto:</label><br>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Selecione um assunto</option>
+                    <option value="suporte">Dúvidas</option>
+                    <option value="vendas">Sugestões</option>
+                    <option value="geral">Geral</option>
+                    <option value="feedback">Feedback</option>
+                </select><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
